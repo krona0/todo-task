@@ -38,6 +38,35 @@
             background-color: #ddd;
             color: black;
         }
+
+        .column {
+            float: left;
+            width: 29%;
+            padding: 15px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media  screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p.thinker {
+            font-weight: 900;
+        }
+
     </style>
 </head>
 <body>
@@ -46,11 +75,33 @@
     </div>
 
     <div class="topnav">
-        <a href="">视频</a>
-        <a href="">文件</a>
-        <a href="">开发者中心</a>
+        <a href="">Home</a>
+        <a href="">share</a>
+        <a href="">contact</a>
+        <a href="">about</a>
     </div>
 
-    <p><a href="https://youtu.be/P32GXXQVLWM?si=y20amw5rKu5Cr0L3">学习搭建网站01</a></p>
+    <div class="row">
+        <div class="column side">
+            <h2>介绍</h2>
+            <p>你好,欢迎加入到我们的开发项目。</p>
+            <p>目前还在测试开发阶段，我会把临时可以使用的文件和链接放在侧边栏--/></p>
+        </div>
+
+        <div class="column middle">
+            <h2>网址分享</h2>
+            <p class="thinker">视频链接</p>
+            <a href="https://youtu.be/P32GXXQVLWM?si=7sp1usJO2IKZHgYr">学习开发网站01</a>
+        </div>
+
+        <div class="column side">
+            <h2>文件分享</h2>
+            <p class="size">building</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>页脚</p>
+    </div>
 </body>
 </html>
